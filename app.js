@@ -6,13 +6,13 @@ const path = require('path');
 const publicFolderPath = path.resolve(__dirname, './public');
 app.use(express.static(publicFolderPath))
 
-app.listen(process.env.PORT || 3030, () => {
-    console.log("Servidor corriendo en puerto 3030")
+app.listen(process.env.PORT || 3031, () => {
+    console.log("Servidor corriendo en puerto 3031")
 })
 
 
 app.get("/", (req, res) => {
- let = htmlPath = path.resolve (__dirname, './views/index.html');
+ let = htmlPath = path.resolve (__dirname, './views/home.html');
 res.sendFile(htmlPath);
    })
 
